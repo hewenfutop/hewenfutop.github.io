@@ -3,6 +3,10 @@ html, body {
     padding: 0;
 }
 
+.clearfloat{
+    clear: both;
+}
+
 aside {
     position: fixed;
     left: 0;
@@ -81,9 +85,27 @@ aside {
 }
 
 .photo img {
+    /*float: left;*/
     height: 100%;
 }
 
+.lg-base-info{
+    display: block;
+}
+
+.md-base-info{
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .lg-base-info{
+        display: none;
+    }
+    .md-base-info{
+        display: block;
+        color: white;
+    }
+}
 
 .base-info {
     float: left;
@@ -175,6 +197,7 @@ aside {
 
 .title-name {
     float: left;
+    color: white;
     line-height: 35px;
 }
 
