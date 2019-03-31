@@ -161,8 +161,9 @@ aside {
         margin: 0 auto;
     }
 
-    .md-base-info-table tr {
-        /*border-bottom: 1px solid #f90;*/
+    .md-base-info-table tr td:first-child {
+        text-align:right;
+		padding-right:1em;
     }
 
     .md-base-info-table tr:nth-child(2n) {
@@ -174,6 +175,8 @@ aside {
         /*border-bottom: 1px solid #f90;*/
         background-color: #ffffff;
     }
+	
+	
 }
 
 @media (max-width: 960px) {
