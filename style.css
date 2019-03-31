@@ -3,47 +3,59 @@ html, body {
     padding: 0;
 }
 
-aside{
+aside {
     position: fixed;
     left: 0;
     top: 50%;
-    background-color: #f90;
+    background-color: #2aabd2;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: hidden;
+    transition: width 2s;
 }
 
-.btn-download-resume
-{
-    display: block;
+
+#tips {
+    padding: 10px;
+    color: white;
+}
+
+.btn-download-resume {
+    display: none;
     height: 40px;
-    padding-right:12px;
+    padding-right: 12px;
     line-height: 40px;
-    text-decoration: none;
+
     color: white;
     /*background-color: #2aabd2;*/
 }
 
-.btn-download-resume:link{
+.btn-download-resume:link {
     color: white;
 }
 
-.btn-download-resume:visited{
+.btn-download-resume:visited {
     color: white;
 }
 
-.btn-download-resume:hover{
+.btn-download-resume:hover {
     color: white;
-    background-color: #5e5e5e;
+    background-color: #f90;
 }
 
-.btn-download-resume:active{
+.btn-download-resume:active {
     color: white;
 }
 
 .base {
     width: 80%;
     margin: 0 auto;
+}
+
+@media frame and (max-width: 960px) {
+    .base{
+        width: 95%;
+    }
 }
 
 .base-1:before {
@@ -71,6 +83,7 @@ aside{
 .photo img {
     height: 100%;
 }
+
 
 .base-info {
     float: left;
@@ -134,7 +147,31 @@ aside{
     color: white;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center center;
 }
+
+.icon-edu {
+    background-image: url("icon/教育.png");
+}
+
+.icon-expr {
+    background-image: url("icon/工作.png");
+}
+
+.icon-gre {
+    background-image: url("icon/叶子.png");
+}
+
+.icon-pro {
+    background-image: url("icon/项目.png");
+}
+
+.icon-skill {
+    background-image: url("icon/技能标签.png");
+}
+
 
 .title-name {
     float: left;
@@ -174,7 +211,11 @@ aside{
 
 }
 
-.skill-row  td:nth-child(2n){
+.skill-row td:nth-child(2n) {
     padding-right: 8em;
 }
 
+footer {
+    height: 300px;
+    background: linear-gradient(to bottom, #fff, rgba(49, 140, 128, 0.4));
+}
