@@ -1,0 +1,180 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+aside{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    background-color: #f90;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+.btn-download-resume
+{
+    display: block;
+    height: 40px;
+    padding-right:12px;
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    /*background-color: #2aabd2;*/
+}
+
+.btn-download-resume:link{
+    color: white;
+}
+
+.btn-download-resume:visited{
+    color: white;
+}
+
+.btn-download-resume:hover{
+    color: white;
+    background-color: #5e5e5e;
+}
+
+.btn-download-resume:active{
+    color: white;
+}
+
+.base {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.base-1:before {
+    content: "";
+    display: block;
+    height: 1px;
+}
+
+.wrap {
+    margin: 30px 30px 30px 30px;
+    background-color: #2b542c;
+}
+
+.base-1 {
+    height: 200px;
+    background-color: rgb(49, 140, 128);
+}
+
+.photo {
+    float: left;
+    height: 150px;
+    background-image: url("myphoto.jpg");
+}
+
+.photo img {
+    height: 100%;
+}
+
+.base-info {
+    float: left;
+    padding-left: 20px;
+}
+
+.base-info div {
+    color: white;
+    font-size: 1.2em;
+
+}
+
+.base-info div:first-child {
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 15px;
+}
+
+.base-info div:first-child span:nth-child(2) {
+    font-size: 0.7em;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.base-info td:nth-child(2n+1) {
+    padding-left: 15px;
+}
+
+.base-info td:nth-child(2n) {
+    padding-right: 15px;
+}
+
+.base-2 {
+    padding-top: 20px;
+}
+
+
+.title {
+    margin-top: 20px;
+    background: linear-gradient(to right, #3c763d, #fff);
+}
+
+.title :first-child {
+    margin-top: 0;
+}
+
+.title:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.title-icon {
+    float: left;
+    width: 40px;
+    height: 35px;
+    margin-right: 15px;
+    background-color: #3c763d;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.title-name {
+    float: left;
+    line-height: 35px;
+}
+
+.content {
+    margin: 5px 40px;
+}
+
+.content .sub-title {
+    font-weight: bold;
+}
+
+.content .sub-title td {
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-wrap {
+    /*background-color: #2b542c;*/
+    margin: 10px 20px;
+    line-height: 1.6em;
+}
+
+.one-progress-bar {
+    height: 15px;
+    min-width: 10em;
+    border: 1px solid #ccc;
+}
+
+.one-progress-bar div {
+    background-color: #2aabd2;
+    height: 100%;
+    min-width: 50%;
+
+}
+
+.skill-row  td:nth-child(2n){
+    padding-right: 8em;
+}
+
