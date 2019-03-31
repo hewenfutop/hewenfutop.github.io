@@ -70,7 +70,7 @@ aside {
 
 .wrap {
     margin: 30px 30px 30px 30px;
-    background-color: #2b542c;
+    /*background-color: #2b542c;*/
 }
 
 .base-1 {
@@ -103,8 +103,21 @@ aside {
     }
     .md-base-info{
         display: block;
-        color: white;
     }
+
+    .md-base-info-table{
+        padding-top: 30px;
+        background:linear-gradient(to bottom ,rgb(49, 140, 128),#fff);
+    }
+    .md-base-info-table table{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .md-base-info-table tr{
+       border-bottom: 1px solid #f90;
+    }
+
 }
 
 .base-info {
