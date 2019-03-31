@@ -52,6 +52,7 @@ aside {
     }
 
     .md-btn-download-resume {
+        font-size: 2em;
         display: none;
     }
 }
@@ -116,6 +117,12 @@ aside {
     background-color: rgb(49, 140, 128);
 }
 
+@media (max-width: 960px) {
+    .base-1 {
+        background-color: rgb(63, 190, 225);
+    }
+}
+
 .photo {
     float: left;
     height: 150px;
@@ -146,7 +153,7 @@ aside {
 
     .md-base-info-table {
         padding-top: 30px;
-        background: linear-gradient(to bottom, rgb(49, 140, 128), #fff);
+        background: linear-gradient(to bottom, rgb(63, 190, 225), #fff);
     }
 
     .md-base-info-table table {
@@ -155,7 +162,17 @@ aside {
     }
 
     .md-base-info-table tr {
-        border-bottom: 1px solid #f90;
+        /*border-bottom: 1px solid #f90;*/
+    }
+
+    .md-base-info-table tr:nth-child(2n) {
+        /*border-bottom: 1px solid #f90;*/
+        background-color: rgba(63, 190, 225,0.2);
+    }
+
+    .md-base-info-table tr:nth-child(2n+1) {
+        /*border-bottom: 1px solid #f90;*/
+        background-color: #ffffff;
     }
 }
 
@@ -207,6 +224,7 @@ aside {
     background: linear-gradient(to right, #3c763d, #fff);
 }
 
+
 .title :first-child {
     margin-top: 0;
 }
@@ -230,6 +248,20 @@ aside {
     background-repeat: no-repeat;
     background-size: auto 80%;
     background-position: center center;
+}
+
+@media (max-width: 960px) {
+    .title {
+        background: linear-gradient(to right, rgb(63, 190, 225), #fff);
+    }
+
+    .title-icon {
+        background-color: rgb(63, 190, 225);
+    }
+
+    .title-name{
+        font-size: 1.3em;
+    }
 }
 
 .icon-edu {
@@ -294,6 +326,24 @@ aside {
 
 .skill-row td:nth-child(2n) {
     padding-right: 8em;
+}
+
+.lg-skill-table {
+    display: block;
+}
+
+.md-skill-table {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .lg-skill-table {
+        display: none;
+    }
+
+    .md-skill-table {
+        display: block;
+    }
 }
 
 footer {
